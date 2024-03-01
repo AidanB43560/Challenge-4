@@ -27,7 +27,7 @@ public class PlayerControllerX : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         playerRb.AddForce(focalPoint.transform.forward * verticalInput * speed * Time.deltaTime); 
 
-        powerupIndicator.transform.position = transform.position + new Vector3(0, -0.5fÍ, 0);
+        powerupIndicator.transform.position = transform.position + new Vector3(0, -0.6f, 0);
         if(Input.GetKeyDown("space"))
         {
             playerRb.AddForce(focalPoint.transform.forward * verticalInput * speed* boost * Time.deltaTime,ForceMode.Impulse);
